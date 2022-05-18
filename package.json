@@ -1,0 +1,33 @@
+{
+  "name": "aljoschadriemel.github.io",
+  "version": "1.0.0",
+  "description": "Personal Homepage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AljoschaDriemel/aljoschadriemel.github.io.git"
+  },
+  "keywords": [
+    "Aljoscha",
+    "Driemel",
+    "Web",
+    "Dev",
+    "Developer"
+  ],
+  "author": "Aljoscha Driemel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AljoschaDriemel/aljoschadriemel.github.io/issues"
+  },
+  "homepage": "https://github.com/AljoschaDriemel/aljoschadriemel.github.io#readme",
+  "devDependencies": {
+    "sass": "^1.51.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.1.1",
+    "bootstrap": "^5.1.3"
+  }
+}
