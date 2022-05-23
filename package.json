@@ -1,9 +1,11 @@
 {
   "name": "aljoschadriemel.github.io",
   "version": "1.0.0",
-  "description": "Personal Homepage",
+  "description": "Personal Homepage Aljoscha Driemel",
   "main": "index.js",
   "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -11,11 +13,10 @@
     "url": "git+https://github.com/AljoschaDriemel/aljoschadriemel.github.io.git"
   },
   "keywords": [
-    "Aljoscha",
-    "Driemel",
     "Web",
-    "Dev",
-    "Developer"
+    "Development",
+    "Aljoscha",
+    "Driemel"
   ],
   "author": "Aljoscha Driemel",
   "license": "ISC",
@@ -23,11 +24,13 @@
     "url": "https://github.com/AljoschaDriemel/aljoschadriemel.github.io/issues"
   },
   "homepage": "https://github.com/AljoschaDriemel/aljoschadriemel.github.io#readme",
-  "devDependencies": {
-    "sass": "^1.51.0"
-  },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.1.1",
-    "bootstrap": "^5.1.3"
+    "bootstrap": "^5.2.0-beta1"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.5.0",
+    "parcel": "^2.5.0",
+    "sass": "^1.52.0"
   }
 }

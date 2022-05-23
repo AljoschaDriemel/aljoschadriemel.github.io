@@ -1,0 +1,10 @@
+@use 'custom';
+
+$pink: pink;
+
+body {
+    background: $pink;
+}
+
+
+// sass --watch src/scss:dist/css

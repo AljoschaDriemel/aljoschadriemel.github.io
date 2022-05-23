@@ -1,0 +1,1 @@
+{"mappings":"AAEA","sources":["src/scss/main.scss"],"sourcesContent":["$red: pink;\n\nbody {\n    background: $red;\n}\n\n// sass --watch src/scss:dist/css"],"names":[],"version":3,"file":"index.b10d73a7.css.map","sourceRoot":"/__parcel_source_root/"}
