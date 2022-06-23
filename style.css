@@ -73,7 +73,8 @@ h1 {
     margin-top: 20px;
 }
 .main-info p {
-  font-size: 2rem;
+  /* font-size: 2rem; */
+  font-size: calc(100% + 4vw);
   font-weight: 700;
   color: #fff;
 }
