@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aljoscha</title>
     <link rel="stylesheet" href="./style.css" />
-    <title>Aljoscha Web Dev</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -29,182 +29,47 @@
           stroke-width="8"
           stroke-linecap="round"
           stroke-linejoin="round"
-          points="
-    0.375, 35.375 28.375, 0.375 58.67, 35.375 "
+          points="0.375, 35.375 28.375, 0.375 58.67, 35.375"
         />
       </svg>
     </button>
-    <div class="container navbar">
-      <header>
-        <div class="logo">
-          <h1>Aljoscha</h1>
+    <!-- HEADER -->
+    <header>
+      <nav class="navbar">
+        <h1>Aljoscha</h1>
+        <ul>
+          <li><a href="#about">about</a></li>
+          <li><a href="#projects">projects</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- MAIN -->
+    <section class="flex">
+      <div class="container main-info">
+        <p>Hi,</p>
+        <p>I'm <span>Aljoscha</span>,</p>
+        <p>Web Developer.</p>
+        <div class="sub-info">
+          <p>CSS / JS / React</p>
         </div>
-        <nav>
-          <ul>
-            <li><a href="#about">about me</a></li>
-            <li><a href="#skills">skills</a></li>
-            <li><a href="#work">my work</a></li>
-          </ul>
-        </nav>
-      </header>
-    </div>
-
-    <div class="container main-info-section">
-      <div class="text">
-        <div class="main-info">
-          <span>H</span>
-          <span class="m-left">i</span>
-          <span class="m-left">,</span>
-          <br />
-          <span class="">I</span>
-          <span class="m-left">'</span>
-          <span class="m-left">m</span>
-          <span class="m name">A</span>
-          <span class="m-left name">l</span>
-          <span class="m-left name">j</span>
-          <span class="m-left name">o</span>
-          <span class="m-left name">s</span>
-          <span class="m-left name">c</span>
-          <span class="m-left name">h</span>
-          <span class="m-left name">a</span>
-          <span class="m-left">,</span>
-          <br />
-          <span>W</span>
-          <span class="m-left">e</span>
-          <span class="m-left">b</span>
-          <span>D</span>
-          <span class="m-left">e</span>
-          <span class="m-left">v</span>
-          <span class="m-left">e</span>
-          <span class="m-left">l</span>
-          <span class="m-left">o</span>
-          <span class="m-left">p</span>
-          <span class="m-left">e</span>
-          <span class="m-left">r</span>
-          <span class="m-left">.</span>
-        </div>
-        <p>CSS / JS / React</p>
-        <a href="#contact">contact me</a>
       </div>
-    </div>
-
-    <div class="profile-image">
-      <img src="" alt="" />
+    </section>
+    <div class="flex cta-btn">
+        <a href="#contact">Contact Me</a>
     </div>
     <!-- ABOUT -->
-    <div class="container about" id="about">
-      <h2>About</h2>
-      <div class="about-me-info">
-        <code>&lt;Hello World!/&gt; </code>
-        <p>
-          My name is Aljoscha, I am a Junior Web Developer from Berlin, Germany.
-        </p>
-        <p>Feel free to take a look at my <a href="#projects">projects</a></p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-          distinctio nesciunt, animi nam ea, molestias accusantium optio
-          asperiores quis unde praesentium ipsum error quibusdam voluptatum
-          facilis? Cumque fugiat maxime ut?
-        </p>
+    <section>
+      <div class="container about">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quia rerum modi magnam, eligendi quaerat veritatis vero aspernatur vitae similique quisquam ex voluptas, excepturi quis deleniti perspiciatis animi iste ab!</p>
       </div>
-    </div>
-    <!-- SKILLS -->
-    <div class="container skills" id="skills">
-      <h2>Skills</h2>
-      <p class="skills-info">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-        dignissimos dolorum culpa labore ducimus. Rerum possimus maxime dicta
-        libero quisquam culpa delectus tempore quis fugit, illo cupiditate id
-        quo beatae!
-      </p>
+    </section>
 
-      <div class="html">
-        <div class="html-tag">
-          <p>HTML</p>
-        </div>
-        <div class="progressbar">
-          <div class="bar-html"></div>
-        </div>
-      </div>
 
-      <div class="JS">
-        <div class="js-tag">
-          <p>JS</p>
-        </div>
-        <div class="progressbar">
-          <div class="js-bar"></div>
-        </div>
-      </div>
-
-      <div class="react">
-        <div class="react-tag">
-          <p>React</p>
-        </div>
-        <div class="progressbar">
-          <div class="react-bar"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container work" id="work">
-      <h2>Work</h2>
-      <div class="work-category">
-        <button id="design" class="active">Web Design</button>
-        <button id="animation">Web Animation</button>
-        <button id="projects">React Projects</button>
-      </div>
-
-      <div class="category-design showCategory">
-        <a href=""><img src="" alt="" /></a>
-        <a href=""><img src="" alt="" /></a>
-        <a href=""><img src="" alt="" /></a>
-        <a href=""><img src="" alt="" /></a>
-        <a href=""><img src="" alt="" /></a>
-      </div>
-
-      <div class="category-animation hideCategory">
-        <a href=""><img src="" alt="" /></a>
-        <a href=""><img src="" alt="" /></a>
-        <a href=""><img src="" alt="" /></a>
-        <a href=""><img src="" alt="" /></a>
-        <a href=""><img src="" alt="" /></a>
-      </div>
-
-      <div class="category-projects hideCategory">
-        <a href=""><img src="" alt="" /></a>
-        <a href=""><img src="" alt="" /></a>
-        <a href=""><img src="" alt="" /></a>
-        <a href=""><img src="" alt="" /></a>
-        <a href=""><img src="" alt="" /></a>
-      </div>
-    </div>
-
-    <div class="container contact" id="contact">
-      <h2>Contact</h2>
-      <form action="">
-        <input type="text" name="name" placeholder="Full Name" />
-        <input type="email" placeholder="Email" />
-        <textarea
-          name="message"
-          id=""
-          cols="30"
-          rows="10"
-          placeholder="Message"
-        ></textarea>
-        <input type="submit" />
-      </form>
-    </div>
-
-    <footer>
-      <hr />
-      <p>2022 Made with</p>
-    </footer>
-
+    <!-- JAVASCRIPT -->
     <script>
-      //Get the button
       var mybutton = document.getElementById("topBtn");
 
-      // When the user scrolls down 20px from the top of the document, show the button
       window.onscroll = function () {
         scrollFunction();
       };
@@ -220,7 +85,6 @@
         }
       }
 
-      // When the user clicks on the button, scroll to the top of the document
       function topFunction() {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
