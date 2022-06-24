@@ -70,15 +70,21 @@ h1 {
 
 /* MAIN */
 .main-info{
-    margin-top: 20px;
+  /* display: block; */
+  height: 90vh;
+  padding: 0 10px;
 }
 .main-info p {
   /* font-size: 2rem; */
-  font-size: calc(100% + 4vw);
+  font-size: calc(100% + 4.2vw);
   font-weight: 700;
   color: #fff;
 }
-.main-info p:hover {
+.main-info p:not(:last-child) {
+  margin: 0 35px;
+}
+.main-info p:hover,
+.about-container p:hover {
   color: var(--green);
   transition: 0.8s;
 }
@@ -86,17 +92,19 @@ h1 {
   color: var(--red);
 }
 .sub-info p {
-  font-size: 1rem;
+  margin-top: 5px;
+  font-size: calc(1rem + 0.5vw);
   font-weight: 300;
-  display: flex;
   word-spacing: 10px;
   letter-spacing: 6px;
+  display: flex;
   color: var(--white);
   justify-content: center;
 }
 .sub-info p:hover {
     color: var(--red);
 }
+
 
 .cta-btn a{
     padding: 10px 20px;
@@ -106,23 +114,73 @@ h1 {
     border: 3px solid var(--red);
     justify-content: center;
     color: var(--red);
-    font-size: 0.8rem;
-    margin-top: 20px;
-}
+    font-size: calc(100% + 0.1vw);
+    margin-top: 15%;
+    
+  }
 .cta-btn a:hover {
     background-color: var(--red);
     transition: 0.5s;
     color: var(--white);
+    
 }
 
 
 /* ABOUT */
+.title-font p {
+  font-size: calc(100% + 2.5rem);
+  color: var(--main);
+  margin: 0 10px;
+  font-weight: 400;
+  text-shadow: 0 0 2px var(--main);
+  padding-left: 10px;
+}
 
+.about {
+background-color: var(--dark2);
+padding: 50px 0;
 
+}
+.about-container {
+  margin: 0 20px;
+  opacity: 0.5;
+}
 
+.about-container p {
 
+}
 
+.about-container a {
+  color: var(--red);
+  text-decoration: none;
+}
 
+/* PROJECTS */
+.projects {
+
+}
+.project-container {
+
+}
+/* PROJECT CARDS */
+.card {
+  padding: 10px;
+  margin: 10px;
+  background-color: var(--red);
+}
+.card-title {
+  padding: 10px;
+  background-color: var(--white);
+}
+.card-body {
+  padding: 10px;
+  background-color: var(--green);
+}
+/*  */
+
+img {
+  max-width: 100%;
+}
 
 #topBtn {
   display: none;
