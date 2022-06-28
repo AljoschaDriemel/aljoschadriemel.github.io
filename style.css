@@ -73,7 +73,8 @@ h1 {
   height: 90vh;
   padding: 0 10px;
 }
-.main-info p, #text {
+.main-info p,
+#text {
   /* font-size: 2rem; */
   font-size: calc(100% + 4.2vw);
   font-weight: 700;
@@ -129,6 +130,9 @@ h1 {
   font-weight: 400;
   text-shadow: 0 0 2px var(--main);
   padding-left: 10px;
+
+  width: 75%;
+  margin: auto;
 }
 
 .about {
@@ -136,7 +140,8 @@ h1 {
   padding: 50px 0;
 }
 .about-container {
-  margin: 0 20px;
+  width: 75%;
+  margin: 0 auto;
   opacity: 0.5;
 }
 
@@ -148,17 +153,18 @@ h1 {
   text-decoration: none;
 }
 
-
 /* PROJECTS */
-.projects {
-}
-.project-container {
-}
+
 /* PROJECT CARDS */
 .card {
   padding: 5px;
-  margin: 10px;
+  margin: 20px auto;
   background-color: var(--red);
+  width: 60%;
+  font-size: calc(70% + 1vw);
+
+  /* margin: auto; */
+  /* min-width: 50vw; */
 }
 .card-title {
   padding: 10px;
@@ -166,7 +172,7 @@ h1 {
   color: var(--red);
 }
 .card-body {
-background-color: var(--red);
+  background-color: var(--red);
 }
 .card-txt {
   display: flex;
@@ -179,22 +185,27 @@ background-color: var(--red);
   padding: 10px;
 }
 
-img {
+.card img {
   max-width: 100%;
+  border-top: 5px solid var(--red);
 }
-#open-btn, #open-btn2, #open-btn3 {
+#open-btn,
+#open-btn2,
+#open-btn3 {
   float: right;
   padding: 15px;
   background-color: var(--red);
 }
 
-#project2, #project3 {
+#project2,
+#project3 {
   display: none;
 }
 
 /* CONTACT */
-.form-container {
 
+.form-container {
+ background-color: var(--dark);
 }
 .form {
   display: flex;
@@ -202,34 +213,24 @@ img {
   /* align-items: center; */
   flex-direction: column;
   gap: 5px;
+  background-color: var(--dark2);
 }
-.form input, label, textarea {
+.form input,
+label,
+textarea {
   margin: auto;
   min-width: 50vw;
-  
 }
-.form input, textarea {
+.form input,
+textarea {
   padding: 8px;
 }
 .submit-btn {
   color: var(--red);
   border: 3px solid var(--red);
-  background-color: var(--dark);
+  background-color: var(--dark2);
   font-size: cal(100% + 0.1vw);
-
 }
-
-/* .cta-btn a {
-  padding: 10px 20px;
-  display: flex;
-  background-color: none;
-  text-decoration: none;
-  border: 3px solid var(--red);
-  justify-content: center;
-  color: var(--red);
-  font-size: calc(100% + 0.1vw);
-  margin-top: 15%;
-} */
 
 
 
@@ -250,8 +251,6 @@ img {
   height: 50px;
   padding: 12.5px 0;
 }
-
-
 
 /* MEDIA QUERYS */
 @media only screen and (min-width: 600px) {
