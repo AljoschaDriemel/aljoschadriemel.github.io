@@ -45,11 +45,11 @@
       </nav>
     </header>
     <!-- MAIN -->
-    <section >
+    <section>
       <div class="container flex main-info">
         <div>
           <p>Hi,</p>
-          <p>I'm <span>Aljoscha</span>,</p>
+          <p>I'm <span class="red">Aljoscha</span>,</p>
           <p>Web Developer.</p>
           <div class="sub-info">
             <p>CSS / JS / React</p>
@@ -80,18 +80,80 @@
         <div class="title-font"><p>Projects</p></div>
         <div class="project-container">
           <div class="card">
-            <div class="card-title">Project 1</div>
-            <div class="card-body">
-              <img src="./img/test.png" alt="test img">
+            <div class="card-title">
+              Sport Club Management System (CMS)
+              <div id="open-btn"></div>
+            </div>
+            <div class="card-body" id="project">
+              <img src="./img/scms.png" alt="test img" />
+              <div class="card-txt flex">
+                <p>
+                  This Management System is developed to organize a Sport Club.
+                </p>
+                <p>
+                  <span>
+                    Features: Weather-API, Editable Memberlist, Printable
+                    Memberlist</span
+                  >
+                </p>
+              </div>
             </div>
           </div>
-          <div class="card"></div>
-          <div class="card"></div>
-          <div class="card"></div>
+          <div class="card">
+            <div class="card-title">
+              Project 2
+              <div id="open-btn2"></div>
+            </div>
+            <div class="card-body" id="project2">
+              <img src="./img/test.png" alt="test img" />
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">
+              Project 3
+              <div id="open-btn3"></div>
+            </div>
+            <div class="card-body" id="project3">
+              <img src="./img/test.png" alt="test img" />
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
+    <section>
+      <div class="container form" id="contact">
+        <div class="title-font"><p>Contact</p></div>
+        <div class="form-container">
+          <form action="" class="form">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name..."
+            />
+
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your@email.com..."
+            />
+
+            <textarea
+              name="msg"
+              id="msg"
+              cols="30"
+              rows="10"
+              placeholder="Write something..."
+            ></textarea>
+            <input type="submit" value="Submit" class="submit-btn">
+          </form>
+        </div>
+      </div>
+    </section>
     <script src="./script.js"></script>
   </body>
 </html>

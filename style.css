@@ -52,8 +52,7 @@ header {
 .navbar a {
   text-decoration: none;
 }
-.navbar 
-a:hover,
+.navbar a:hover,
 h1:hover {
   color: var(--red);
   transition: 0.6s;
@@ -63,18 +62,18 @@ h1 {
   opacity: 0.5;
 }
 .flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* MAIN */
-.main-info{
+.main-info {
   /* display: block; */
   height: 90vh;
   padding: 0 10px;
 }
-.main-info p {
+.main-info p, #text {
   /* font-size: 2rem; */
   font-size: calc(100% + 4.2vw);
   font-weight: 700;
@@ -88,7 +87,7 @@ h1 {
   color: var(--green);
   transition: 0.8s;
 }
-.main-info span {
+.main-info .red {
   color: var(--red);
 }
 .sub-info p {
@@ -102,29 +101,25 @@ h1 {
   justify-content: center;
 }
 .sub-info p:hover {
-    color: var(--red);
+  color: var(--red);
 }
 
-
-.cta-btn a{
-    padding: 10px 20px;
-    display: flex;
-    background-color: none;
-    text-decoration: none;
-    border: 3px solid var(--red);
-    justify-content: center;
-    color: var(--red);
-    font-size: calc(100% + 0.1vw);
-    margin-top: 15%;
-    
-  }
+.cta-btn a {
+  padding: 10px 20px;
+  display: flex;
+  background-color: none;
+  text-decoration: none;
+  border: 3px solid var(--red);
+  justify-content: center;
+  color: var(--red);
+  font-size: calc(100% + 0.1vw);
+  margin-top: 15%;
+}
 .cta-btn a:hover {
-    background-color: var(--red);
-    transition: 0.5s;
-    color: var(--white);
-    
+  background-color: var(--red);
+  transition: 0.5s;
+  color: var(--white);
 }
-
 
 /* ABOUT */
 .title-font p {
@@ -137,9 +132,8 @@ h1 {
 }
 
 .about {
-background-color: var(--dark2);
-padding: 50px 0;
-
+  background-color: var(--dark2);
+  padding: 50px 0;
 }
 .about-container {
   margin: 0 20px;
@@ -147,7 +141,6 @@ padding: 50px 0;
 }
 
 .about-container p {
-
 }
 
 .about-container a {
@@ -155,33 +148,92 @@ padding: 50px 0;
   text-decoration: none;
 }
 
+
 /* PROJECTS */
 .projects {
-
 }
 .project-container {
-
 }
 /* PROJECT CARDS */
 .card {
-  padding: 10px;
+  padding: 5px;
   margin: 10px;
   background-color: var(--red);
 }
 .card-title {
   padding: 10px;
-  background-color: var(--white);
+  background-color: var(--main);
+  color: var(--red);
 }
 .card-body {
-  padding: 10px;
-  background-color: var(--green);
+background-color: var(--red);
 }
-/*  */
+.card-txt {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main);
+  padding: 5px;
+}
+.card-txt span {
+  font-size: calc(100% - 2px);
+  padding: 10px;
+}
 
 img {
   max-width: 100%;
 }
+#open-btn, #open-btn2, #open-btn3 {
+  float: right;
+  padding: 15px;
+  background-color: var(--red);
+}
 
+#project2, #project3 {
+  display: none;
+}
+
+/* CONTACT */
+.form-container {
+
+}
+.form {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  gap: 5px;
+}
+.form input, label, textarea {
+  margin: auto;
+  min-width: 50vw;
+  
+}
+.form input, textarea {
+  padding: 8px;
+}
+.submit-btn {
+  color: var(--red);
+  border: 3px solid var(--red);
+  background-color: var(--dark);
+  font-size: cal(100% + 0.1vw);
+
+}
+
+/* .cta-btn a {
+  padding: 10px 20px;
+  display: flex;
+  background-color: none;
+  text-decoration: none;
+  border: 3px solid var(--red);
+  justify-content: center;
+  color: var(--red);
+  font-size: calc(100% + 0.1vw);
+  margin-top: 15%;
+} */
+
+
+
+/* TOP BTN */
 #topBtn {
   display: none;
   position: fixed;
@@ -199,11 +251,13 @@ img {
   padding: 12.5px 0;
 }
 
+
+
+/* MEDIA QUERYS */
 @media only screen and (min-width: 600px) {
   .navbar ul {
     display: flex;
   }
-
 }
 
 /* @media only screen and (min-width: 768px) {
