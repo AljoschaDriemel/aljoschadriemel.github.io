@@ -126,10 +126,12 @@ h1 {
 .title-font p {
   font-size: calc(100% + 2.5rem);
   color: var(--main);
-  margin: 0 10px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 10px;
+
   font-weight: 400;
   text-shadow: 0 0 2px var(--main);
-  padding-left: 10px;
 
   width: 75%;
   margin: auto;
@@ -138,6 +140,7 @@ h1 {
 .about {
   background-color: var(--dark2);
   padding: 50px 0;
+  height: 90vh;
 }
 .about-container {
   width: 75%;
@@ -146,6 +149,11 @@ h1 {
 }
 
 .about-container p {
+  width: 100%;
+  margin: auto;
+
+  padding-left: 10px;
+  font-size: calc(100% + .5vw);
 }
 
 .about-container a {
@@ -181,8 +189,7 @@ h1 {
   padding: 5px;
 }
 .card-txt span {
-  font-size: calc(100% - 2px);
-  padding: 10px;
+  
 }
 
 .card img {
@@ -193,9 +200,14 @@ h1 {
 #open-btn2,
 #open-btn3 {
   float: right;
-  padding: 15px;
+  padding: .5vh;
+  font-size: calc(50% + 1vh);
   background-color: var(--red);
+  color: var(--dark);
+  /* text-align: center; */
+  cursor: pointer;
 }
+
 
 #project2,
 #project3 {
@@ -206,6 +218,7 @@ h1 {
 
 .form-container {
  background-color: var(--dark);
+ margin: 100px;
 }
 .form {
   display: flex;
@@ -231,7 +244,9 @@ textarea {
   background-color: var(--dark2);
   font-size: cal(100% + 0.1vw);
 }
-
+textarea {
+  margin-top: 20px;
+}
 
 
 /* TOP BTN */
@@ -250,6 +265,24 @@ textarea {
   width: 50px;
   height: 50px;
   padding: 12.5px 0;
+}
+
+/* FOOTER */
+
+footer {
+  /* width: 10%;
+  height: 250px;
+  margin: auto; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer svg {
+  margin: 50px;
+  
+}
+footer a {
+  color: var(--dark);
 }
 
 /* MEDIA QUERYS */
