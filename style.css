@@ -178,9 +178,9 @@ h1 {
 
 .card {
   border: 5px solid var(--red);
-  max-width: 900px;
   margin: 10px auto;
   min-width: 50vw;
+  max-width: 700px;
 
   
   /* width: 100%; */
@@ -289,15 +289,15 @@ textarea {
 /* FOOTER */
 
 footer {
-  /* width: 10%;
-  height: 250px;
-  margin: auto; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 50%;
+  margin: auto;
+  padding: 20px;
 }
 footer svg {
-  margin: 50px;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
 }
 footer a {
   color: var(--dark);
@@ -309,12 +309,13 @@ footer a {
     display: flex;
   }
 }
+@media only screen and (max-width: 600px) {
+  .title-font p{
+    display: flex;
+    justify-content: center;
+  }
+}
 
-/* @media only screen and (min-width: 768px) {
-    letter-spacing
 
-}*/
 
-/* @media only screen and (min-width: 992px) {...} */
 
-/* @media only screen and (min-width: 1200px) {...}  */
