@@ -153,7 +153,7 @@ h1 {
   margin: auto;
 
   padding-left: 10px;
-  font-size: calc(100% + .5vw);
+  font-size: calc(100% + 0.5vw);
 }
 
 .about-container a {
@@ -163,14 +163,28 @@ h1 {
 
 /* PROJECTS */
 
-/* PROJECT CARDS */
-.card {
-  padding: 5px;
-  margin: 20px auto;
-  background-color: var(--red);
-  width: 60%;
-  font-size: calc(70% + 1vw);
+.projects {
 
+}
+.project-container {
+
+ 
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  border: 5px solid var(--red);
+  max-width: 900px;
+  margin: 10px auto;
+  min-width: 50vw;
+
+  
+  /* width: 100%; */
+  /* font-size: calc(70% + 1vw); */
   /* margin: auto; */
   /* min-width: 50vw; */
 }
@@ -178,6 +192,8 @@ h1 {
   padding: 10px;
   background-color: var(--main);
   color: var(--red);
+  width: 100%;
+  font-size: calc(100% + 0.5vw);
 }
 .card-body {
   background-color: var(--red);
@@ -189,25 +205,29 @@ h1 {
   padding: 5px;
 }
 .card-txt span {
-  
 }
 
 .card img {
   max-width: 100%;
   border-top: 5px solid var(--red);
 }
+
 #open-btn,
 #open-btn2,
 #open-btn3 {
-  float: right;
-  padding: .5vh;
-  font-size: calc(50% + 1vh);
-  background-color: var(--red);
-  color: var(--dark);
-  /* text-align: center; */
+  width: 50px;
   cursor: pointer;
-}
+  border: 5px solid var(--dark);
+  
+  display: flex;
+  /* float: right; */
+  /* padding: 5px; */
+  /* font-size: calc(50% + 1vh); */
+  /* background-color: var(--red); */
+  /* color: var(--dark); */
+  /* text-align: center; */
 
+}
 
 #project2,
 #project3 {
@@ -217,8 +237,8 @@ h1 {
 /* CONTACT */
 
 .form-container {
- background-color: var(--dark);
- margin: 100px;
+  background-color: var(--dark);
+  margin: 100px;
 }
 .form {
   display: flex;
@@ -247,7 +267,6 @@ textarea {
 textarea {
   margin-top: 20px;
 }
-
 
 /* TOP BTN */
 #topBtn {
@@ -279,7 +298,6 @@ footer {
 }
 footer svg {
   margin: 50px;
-  
 }
 footer a {
   color: var(--dark);
