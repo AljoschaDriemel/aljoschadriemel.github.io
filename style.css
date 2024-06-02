@@ -61,6 +61,14 @@ h1 {
   font-size: 1.9rem;
   opacity: 0.5;
 }
+h2 {
+  padding-left: 10px;
+}
+
+h3 {
+  padding: 10px 0px;
+}
+
 .flex {
   display: flex;
   justify-content: center;
@@ -114,7 +122,7 @@ h1 {
   justify-content: center;
   color: var(--red);
   font-size: calc(100% + 0.1vw);
-  margin-top: 15%;
+  margin-top: 10%;
 }
 .cta-btn a:hover {
   background-color: var(--red);
@@ -124,8 +132,8 @@ h1 {
 
 /* ABOUT */
 .title-font p {
-  font-size: calc(100% + 2.5rem);
-  color: var(--main);
+  font-size: calc(100% + 1.2rem);
+  /* color: var(--main); */
   padding-top: 40px;
   padding-bottom: 40px;
   padding-left: 10px;
@@ -140,7 +148,7 @@ h1 {
 .about {
   background-color: var(--dark2);
   padding: 50px 0;
-  height: 90vh;
+  /* height: 90vh; */
 }
 .about-container {
   width: 75%;
@@ -159,6 +167,17 @@ h1 {
 .about-container a {
   color: var(--red);
   text-decoration: none;
+}
+
+.cards-container {
+display: flex;
+justify-content: space-between;
+padding: 20px;
+flex-wrap: wrap;
+}
+
+.cards {
+  padding: 20px 20px;
 }
 
 /* PROJECTS */
@@ -212,7 +231,8 @@ h1 {
   border-top: 5px solid var(--red);
 }
 
-#open-btn,
+
+#open-btn, 
 #open-btn2,
 #open-btn3 {
   width: 50px;
@@ -229,6 +249,8 @@ h1 {
 
 }
 
+/* Closed Card */
+#project,
 #project2,
 #project3 {
   display: none;
@@ -238,7 +260,7 @@ h1 {
 
 .form-container {
   background-color: var(--dark);
-  margin: 100px;
+  /* margin: 100px; */
 }
 .form {
   display: flex;
@@ -257,6 +279,7 @@ textarea {
 .form input,
 textarea {
   padding: 8px;
+/*   min-width: 250px; */
 }
 .submit-btn {
   color: var(--red);
@@ -312,8 +335,15 @@ footer a {
 @media only screen and (max-width: 600px) {
   .title-font p{
     display: flex;
-    justify-content: center;
+
   }
+  .form input,
+textarea {
+  min-width: 250px;
+}
+.sub-info p {
+  word-spacing: 0px;
+}
 }
 
 

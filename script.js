@@ -24,12 +24,20 @@ let project = document.getElementById("project")
 let openBtn = document.getElementById("open-btn");
 
 openBtn.addEventListener("click", function handleClick() {
+  if (project.style.display === 'block') {
+    project.style.display = 'none';
+  } else {
+    project.style.display = 'block';
+  }
+})
+
+/* openBtn.addEventListener("click", function handleClick() {
   if (project.style.display === 'none') {
     project.style.display = 'block';
   } else {
     project.style.display = 'none';
   }
-})
+}) */
 
 /* FIX LATER */
 
